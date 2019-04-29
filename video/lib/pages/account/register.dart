@@ -61,15 +61,6 @@ class __RegisterBodyState extends State<_RegisterBody> {
     }
   }
 
-
-  //                    onSaved: (value) => _form.username = value,
-//                    focusNode: _usernameFocus,
-//                    textInputAction: TextInputAction.next,
-//                    onEditingComplete: (){
-//                      _usernameFocus.unfocus();
-//                      FocusScope.of(context).requestFocus(_passwordFocus);
-//                    },
-
   @override
   Widget build(BuildContext context) {
     return Stack(

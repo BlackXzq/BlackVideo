@@ -10,5 +10,5 @@ class BLConfig {
   static var loggerLevel = Level.ALL;
   static var isLogAction = false;
   static var isLogApi = false;
-  static var isMockApi = false;
+  static var isMockApi = true;
 }
