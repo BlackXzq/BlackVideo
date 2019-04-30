@@ -39,8 +39,7 @@ class __BodyState extends State<_Body> {
   void _bootstrap() {
     widget.store.dispatch(accountInfoAction(
       onSucceed: (user) {
-        Future.delayed(const Duration(seconds: 2), ()=> Navigator.of(context).pushReplacementNamed(user.id == 0 ? '/login' : '/tab'));
-        ;
+        Navigator.of(context).pushReplacementNamed(user.id == 0 ? '/login' : '/tab');
       },
       onFailed: (notice) {
         setState(() {
