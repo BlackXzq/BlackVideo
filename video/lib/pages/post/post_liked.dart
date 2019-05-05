@@ -20,7 +20,7 @@ class PostLikedPage extends StatelessWidget {
     return StoreConnector<AppState, _ViewModel>(
       converter: (store) => _ViewModel(
         userId: userId,
-        postLiked: (store.state.post.postsLiked[userId] ?? [])
+        postLiked: (store.state.post.postsLiked[userId.toString()] ?? [])
             .map<PostEntity>((v) => store.state.post.posts[v.toString()])
             .toList()
       ),
