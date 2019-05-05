@@ -180,7 +180,7 @@ class __BodyState extends State<_Body> {
       child: Column(
         children: <Widget>[
           _listContentTile('喜欢', (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => PostLikedPage()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => PostLikedPage(userId: widget.vm.user.id)));
           }),
           Divider(height: 1,),
           _listContentTile('关注', (){

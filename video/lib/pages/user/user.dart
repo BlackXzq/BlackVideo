@@ -590,7 +590,7 @@ class __BodyState extends State<_Body> {
             }
           },
         ),
-      )),
+      )).toList(),
     );
   }
 
