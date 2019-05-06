@@ -184,11 +184,11 @@ class __BodyState extends State<_Body> {
           }),
           Divider(height: 1,),
           _listContentTile('关注', (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => UsersFollowingPage()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => UsersFollowingPage(userId: widget.vm.user.id,)));
           }),
           Divider(height: 1,),
           _listContentTile('粉丝', (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => FollowersPage()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => FollowersPage(userId: widget.vm.user.id,)));
           }),
         ],
       ),
